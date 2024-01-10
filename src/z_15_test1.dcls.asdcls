@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Controls'
+@MappingRole: true
+define role Z_15_TEST1 {
+    grant select on Z_15_TEST1
+    where (CarrierId) = aspect pfcg_auth(S_CARRID, CARRID, ACTVT = '03');                 
+}

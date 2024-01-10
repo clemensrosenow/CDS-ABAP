@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SUSH" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HEAD>
+    <NAME>2E83810820E5C191294E8FAE1C40F0</NAME>
+    <TYPE>HT</TYPE>
+    <DISPLAY_NAME>R3TR G4BA ZUI_15_FLIGHT_V4</DISPLAY_NAME>
+    <MODIFIER>TRAIN-15</MODIFIER>
+    <MODDATE>2024-01-09</MODDATE>
+    <MODTIME>14:01:43</MODTIME>
+    <SRCSYSTEM>S4D</SRCSYSTEM>
+    <AUTHOR>TRAIN-15</AUTHOR>
+    <DEVCLASS>Z15</DEVCLASS>
+   </HEAD>
+   <USOBX>
+    <USOBX>
+     <NAME>2E83810820E5C191294E8FAE1C40F0</NAME>
+     <TYPE>HT</TYPE>
+     <OBJECT>S_START</OBJECT>
+     <MODIFIER>TRAIN-15</MODIFIER>
+     <MODDATE>2024-01-09</MODDATE>
+     <MODTIME>14:01:43</MODTIME>
+     <OKFLAG>X</OKFLAG>
+    </USOBX>
+   </USOBX>
+   <USOBX_EXT>
+    <item>
+     <OBJECT>S_START</OBJECT>
+     <TTEXT>Start Authorization Check for TADIR Objects</TTEXT>
+     <OCLSS>AAAB</OCLSS>
+     <MODIFIER>TRAIN-15</MODIFIER>
+     <MODDATE>2024-01-09</MODDATE>
+     <MODTIME>14:01:43</MODTIME>
+     <OKFLAG>X</OKFLAG>
+     <DEVCLASS>S_PROFGEN_START_AUTH</DEVCLASS>
+     <PS_POSID>BC-SEC-AUT-PFC</PS_POSID>
+     <CI_TEXT>Check</CI_TEXT>
+     <CH_TEXT>Check</CH_TEXT>
+     <PR_TEXT>No</PR_TEXT>
+     <EXCEP>3</EXCEP>
+     <EXCEP_TX>Okay</EXCEP_TX>
+     <EXCEP_ICON>@08@</EXCEP_ICON>
+    </item>
+   </USOBX_EXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

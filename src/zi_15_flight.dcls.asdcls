@@ -1,0 +1,6 @@
+@EndUserText.label: 'Flight Interface Access Control'
+@MappingRole: true
+define role ZI_15_FLIGHT {
+    grant select on ZI_15_FLIGHT
+    where (CarrierId) = aspect pfcg_auth(S_CARRID, CARRID, ACTVT = '03');
+}

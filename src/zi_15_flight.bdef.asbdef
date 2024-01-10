@@ -1,0 +1,55 @@
+managed; // implementation in class zbp_i_15_flight unique;
+
+/* Root Entity: Flight */
+define behavior for ZI_15_Flight //alias <alias_name>
+persistent table sflight
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  association _Bookings
+  { create; } //Booking creation in combination with Flight
+
+    mapping for sflight corresponding
+    {
+      CarrierId = carrid;
+      ConnectionId = connid;
+      FlightDate = fldate;
+
+      //      Price = price;
+      //      Currency = currency;
+      //      PlaneType = planetype;
+      MaximumSeatsEconomyClass = seatsmax;
+      OccupiedSeatsEconomyClass = seatsocc;
+
+      PaymentSum = paymentsum;
+      MaximumSeatsBusinessClass = seatsmax_b;
+      OccupiedSeatsBusinessClass = seatsocc_b;
+      MaximumSeatsFirstClass = seatsmax_f;
+      OccupiedSeatsFirstClass = seatsocc_f;
+    }
+  }
+
+  /* Booking Entity */
+  define behavior for ZI_15_Booking //alias <alias_name>
+  persistent table sbook
+  lock dependent by _Flight
+  //authorization dependent by <association>
+  //etag master <field_name>
+  {
+    update;
+    delete;
+
+    association _Flight;
+
+    field ( readonly ) Carrid, Connid, Fldate;
+    field (mandatory) Customid, OrderDate;
+
+    mapping for sbook corresponding
+    {
+
+    }
+  }
